@@ -1,5 +1,7 @@
 # Banco de dados - SmartCondos
 
+## Não terminei ainda o banco de dados
+
 ### Para o Alisson :)
 - Mudanças feitas enquanto criava o banco de dados:
 	- Criei o atributo **cpfFuncionario** na tabela **Encomenda*, para visualizar o cpf do funcionario que recebeu a encomenda

@@ -1,21 +1,73 @@
-# Banco de dados - SmartCondos
-
-## Não terminei ainda o banco de dados
+# Vejam como esta ate agora
+- ⚠️ Importar arquivo `smartcondos.sql` que está aqui no repositório. ⚠️
+- ⚠️ [Vídeo para importar o banco de dados do PostgreSQL na máquina local](https://www.youtube.com/watch?v=ijB_YZNrv4E) ⚠️
 
 ### Para o Alisson :)
 - Mudanças feitas enquanto criava o banco de dados:
-	- Criei o atributo **cpfFuncionario** na tabela **Encomenda*, para visualizar o cpf do funcionario que recebeu a encomenda
-	- Criei o atributo **cpfCondomino** na tabela **Tag**, para visualizar o cpf do condomino que gerou/possui aquela tag
+	- Criei o atributo **cpfFuncionario** na tabela **Encomenda*, para visualizar o cpf do funcionario que recebeu a encomenda.
+	- Criei o atributo **cpfCondomino** na tabela **Tag**, para visualizar o cpf do condomino que gerou/possui aquela tag.
+	- Criei o atributo **cpfOcorrencia** na tabela **Ocorrencia**, para visualizar o cpf do condomino que fez aquela ocorrencia.
+	- Criei o atributo **cpfSindico** na tabela **Sindico**, para visualizar o cpf do condomino é o Sindico.
+	- Criei o atributo **cpfReserva** na tabela **Reserva**, para visualizar o cpf do condomino que fez a reserva.
+	- Criei o atributo **`idReserva`**na tabela **`Reserva`**, para ter um identificador e melhor gerenciamento.
 
 
-### Para joao pedro :)
-- nada ate agora
+# `Não mexer daqui pra baixo` é pra professora ver se precisar
 
-# ´Não mexer daqui pra baixo´ ***vou deixar mais bonito dps***
+# Banco de Dados - SmartCondos
 
-- Foi usado o PostgreSQL para gerenciar e criar o banco de dados para o sistema.
-- O banco de dados foi feito em cima dos diagramas e demais documentações criadas.
-- etc etc 
+## Visão Geral
+O banco de dados SmartCondos foi desenvolvido com o objetivo de gerenciar vários aspectos de um condomínio. Ele inclui tabelas essenciais para o funcionamento de um bom sistema (especificadas na estrutura abaixo). Cada tabela possui uma chave primária, sendo o CPF do responsável ou um número identificador (ID).
 
+## Criação do Banco de Dados
+- **Base de Dados**: PostgreSQL.
+- **Diagrama**: O banco de dados foi desenhado usando diagramas que detalham as relações entre os objetos, classes e casos de uso, garantindo uma estrutura bem planejada.
 
-´Colocar mais informações para a professora´
+## Estrutura do Banco de Dados
+#### `Visitantes`
+- **Propósito**: Controlar a entrada e saída de visitantes no condomínio.
+- **Importância**: Garante a segurança e a rastreabilidade dos acessos.
+- **Chave Primária**: CPF do visitante
+
+#### `Condôminos`
+- **Propósito**: Gerenciar informações dos residentes, incluindo dados pessoais e histórico de residências.
+- **Importância**: Mantém um registro preciso dos moradores e suas informações.
+- **Chave Primária**: CPF do morador
+
+#### `Reservas`
+- **Propósito**: Permitir que moradores façam reservas de áreas comuns, como salão de festas e churrasqueira.
+- **Importância**: Garante a organização e evita conflitos de agenda.
+- **Chave Primária**: ID da reserva.
+
+#### `Funcionários`
+- **Propósito**: Registrar os dados dos funcionários do condomínio.
+- **Importância**: Facilita o controle interno e a gestão de funcionários, como turno e cargos.
+- **Chave Primária**: CPF do funcionário.
+
+#### `Encomendas`
+- **Propósito**: Gerenciar o recebimento e a entrega de encomendas para os moradores, encomendas que são recebidas pelo funcionário (porteiro).
+- **Importância**: Ajuda na organização e na entrega eficiente dos itens.
+- **Chave Primária**: ID da encomenda.
+
+#### `Avisos`
+- **Propósito**: Comunicação entre o síndico e os moradores.
+- **Importância**: Permite a divulgação de avisos importantes, como manutenções e reuniões.
+- **Chave Primária**: ID do aviso.
+
+#### `Ocorrências`
+- **Propósito**: Registro de incidentes e ocorrências dentro do condomínio.
+- **Importância**: Facilita a análise e resolução de problemas.
+- **Chave Primária**: ID da ocorrência.
+
+#### `Síndico do Condomínio`
+- **Propósito**: Registrar informações sobre o síndico responsável pela gestão do condomínio.
+- **Importância**: Essencial para a comunicação e a tomada de decisões administrativas.
+- **Chave Primária**: CPF do síndico.
+
+#### `Tags`
+- **Propósito**: Criadas pelos moradores para liberar o acesso de entrada aos visitantes.
+- **Importância**: Proporciona segurança e controle de acesso.
+- **Chave Primária**: ID da tag de acesso.
+
+Feito por Matheus Madureira, Alisson Carvalho e João Pedro 🧡☕
+

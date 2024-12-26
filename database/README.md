@@ -9,7 +9,7 @@
 	- Criei o atributo **cpfOcorrencia** na tabela **Ocorrencia**, para visualizar o cpf do condomino que fez aquela ocorrencia.
 	- Criei o atributo **cpfSindico** na tabela **Sindico**, para visualizar o cpf do condomino é o Sindico.
 	- Criei o atributo **cpfReserva** na tabela **Reserva**, para visualizar o cpf do condomino que fez a reserva.
-	- Criei o atributo **`idReserva`**na tabela **`Reserva`**, para ter um identificador e melhor gerenciamento.
+	- Criei o atributo `**idReserva**` na tabela **`Reserva`**, para ter um identificador e melhor gerenciamento.
 
 
 # `Não mexer daqui pra baixo` é pra professora ver se precisar

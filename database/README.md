@@ -69,5 +69,5 @@ O banco de dados SmartCondos foi desenvolvido com o objetivo de gerenciar vário
 - **Importância**: Proporciona segurança e controle de acesso.
 - **Chave Primária**: ID da tag de acesso.
 
-Feito por Matheus Madureira, Alisson Carvalho e João Pedro 🧡☕
+**Feito por Matheus Madureira, Alisson Carvalho e João Pedro** 🧡☕
 

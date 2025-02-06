@@ -1,20 +1,7 @@
-# Vejam como esta ate agora
-- ⚠️ Importar arquivo `smartcondos.sql` que está aqui no repositório. ⚠️
-- ⚠️ [Vídeo para importar o banco de dados do PostgreSQL na máquina local](https://www.youtube.com/watch?v=ijB_YZNrv4E) ⚠️
-
-### Para o Alisson :)
-- Mudanças feitas enquanto criava o banco de dados:
-	- Criei o atributo **cpfFuncionario** na tabela **Encomenda*, para visualizar o cpf do funcionario que recebeu a encomenda.
-	- Criei o atributo **cpfCondomino** na tabela **Tag**, para visualizar o cpf do condomino que gerou/possui aquela tag.
-	- Criei o atributo **cpfOcorrencia** na tabela **Ocorrencia**, para visualizar o cpf do condomino que fez aquela ocorrencia.
-	- Criei o atributo **cpfSindico** na tabela **Sindico**, para visualizar o cpf do condomino é o Sindico.
-	- Criei o atributo **cpfReserva** na tabela **Reserva**, para visualizar o cpf do condomino que fez a reserva.
-	- Criei o atributo `**idReserva**` na tabela **`Reserva`**, para ter um identificador e melhor gerenciamento.
-
-
-# `Não mexer daqui pra baixo` é pra professora ver se precisar
-
 # Banco de Dados - SmartCondos
+## Como importar o banco de Dados
+- ⚠️ Baixar arquivo `smartcondos.sql` que está aqui no repositório. ⚠️
+- ⚠️ [Vídeo para importar o banco de dados do PostgreSQL na máquina local](https://www.youtube.com/watch?v=ijB_YZNrv4E) ⚠️
 
 ## Visão Geral
 O banco de dados SmartCondos foi desenvolvido com o objetivo de gerenciar vários aspectos de um condomínio. Ele inclui tabelas essenciais para o funcionamento de um bom sistema (especificadas na estrutura abaixo). Cada tabela possui uma chave primária, sendo o CPF do responsável ou um número identificador (ID).

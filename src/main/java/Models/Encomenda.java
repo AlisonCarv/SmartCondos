@@ -1,16 +1,18 @@
 package Models;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Encomenda {
     private int idEncomenda;
-    private LocalDateTime dataEncomenda;
+    private LocalDate dataEncomenda;
     private int aptoEncomenda;
+    private String cpfFuncionario;
 
     public Encomenda() {
         this.idEncomenda = 0;
-        this.dataEncomenda = LocalDateTime.now();
+        this.dataEncomenda = LocalDate.now();
         this.aptoEncomenda = 0;
+        this.cpfFuncionario = "";
     }
 
     public int getIdEncomenda() {
@@ -21,11 +23,11 @@ public class Encomenda {
         this.idEncomenda = idEncomenda;
     }
 
-    public LocalDateTime getDataEncomenda() {
+    public LocalDate getDataEncomenda() {
         return dataEncomenda;
     }
 
-    public void setDataEncomenda(LocalDateTime dataEncomenda) {
+    public void setDataEncomenda(LocalDate dataEncomenda) {
         this.dataEncomenda = dataEncomenda;
     }
 
@@ -35,6 +37,14 @@ public class Encomenda {
 
     public void setAptoEncomenda(int aptoEncomenda) {
         this.aptoEncomenda = aptoEncomenda;
+    }
+    
+    public String getCpfFuncionario() {
+        return cpfFuncionario;
+    }
+
+    public void setCpfFuncionario(String cpfFuncionario) {
+        this.cpfFuncionario = cpfFuncionario;
     }
     
     

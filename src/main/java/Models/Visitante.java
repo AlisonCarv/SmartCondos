@@ -1,31 +1,31 @@
 
 package Models;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Visitante extends Pessoa{
-    private LocalDateTime dataEntrada;
-    private LocalDateTime dataSaida;
+    private LocalDate data;
+    private int apto;
 
     public Visitante() {
-        this.dataEntrada = LocalDateTime.now();
-        this.dataSaida = LocalDateTime.now();
+        this.data = LocalDate.now();
+        this.apto = 0;
     }
 
-    public LocalDateTime getDataEntrada() {
-        return dataEntrada;
+    public LocalDate getData() {
+        return data;
     }
 
-    public void setDataEntrada(LocalDateTime dataEntrada) {
-        this.dataEntrada = dataEntrada;
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+    
+    public int getApto() {
+        return apto;
     }
 
-    public LocalDateTime getDataSaida() {
-        return dataSaida;
-    }
-
-    public void setDataSaida(LocalDateTime dataSaida) {
-        this.dataSaida = dataSaida;
+    public void setApto(int apto) {
+        this.apto = apto;
     }
     
 }

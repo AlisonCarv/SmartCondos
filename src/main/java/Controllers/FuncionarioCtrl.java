@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controllers;
 
-/**
- *
- * @author joaopedro
- */
+import Models.Funcionario;
+import dao.FuncionarioDAO;
+import java.util.ArrayList;
+
+
 public class FuncionarioCtrl {
+    private FuncionarioDAO funcionarioDAO;
+
+    public FuncionarioCtrl() {
+        this.funcionarioDAO = new FuncionarioDAO();
+    }
+
+    public ArrayList<Funcionario> listarFuncionarios() {
+        return funcionarioDAO.consultarTodosFuncionarios();
+    }
     
+    public boolean verificarFuncionario(String cpf) {
+        return funcionarioDAO.verificarCPF(cpf);
+    }
 }

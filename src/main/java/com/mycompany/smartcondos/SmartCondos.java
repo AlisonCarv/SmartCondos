@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.smartcondos;
 
-/**
- *
- * @author joaopedro
- */
+import Views.LoginGUI;
+
 public class SmartCondos {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        java.awt.EventQueue.invokeLater(() -> {
+            new LoginGUI().setVisible(true);
+        });
     }
 }
